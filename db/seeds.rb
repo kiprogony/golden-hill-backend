@@ -6,4 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Employee.create(name: "John Block", mobile_no: "0712345678", hired_date: "12-05-2017", id_no: "651324", salary: "55,100" )
+Employee.create!(name: Faker::Name.name, mobile_no: "0729747455", hired_date: Faker::Date.between(from: '2016-09-23', to: '2020-09-25'), id_no: Faker::IDNumber.valid, salary: "18100")
+Employee.create!(name: Faker::Name.name, mobile_no: "0729747455", hired_date: Faker::Date.between(from: '2016-09-23', to: '2020-09-25'), id_no: Faker::IDNumber.valid, salary: "18100")
+Employee.create!(name: Faker::Name.name, mobile_no: "0729747455", hired_date: Faker::Date.between(from: '2016-09-23', to: '2020-09-25'), id_no: Faker::IDNumber.valid, salary: "18100")
+# Employee.create!(name: Faker, salary: "Quiscalus Quiscula")
+# Employee.create!(name: "Common Starling", salary: "Sturnus Vulgaris")
+# Employee.create!(name: "Mourning Dove", salary: "Zenaida Macroura")
